@@ -1,2 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Roboto-Regular.woff') format('woff'),
+        url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Medium.eot');
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('../assets/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Roboto-Medium.woff') format('woff'),
+        url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Condensed';
+    src: local('DINCondensed Bold'), local('DINCondensedBold'),
+        url('../assets/fonts/DINCondensedBold.otf') format('otf'),
+        url('../assets/fonts/DINCondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

@@ -52,7 +52,21 @@ module.exports = (env, options) => ({
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "img/"
+              outputPath: "img/",
+              // publicPath: '../',
+              // useRelativePaths: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(otf|ttf|eot|woff)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
             }
           }
         ]
