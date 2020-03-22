@@ -72,6 +72,18 @@ module.exports = (env, options) => ({
         ]
       },
       {
+        test: /\.(js)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "js/"
+            }
+          }
+        ]
+      },
+      {
         test: /\.(html)$/,
         use: {
           loader: "html-srcsets-loader",
