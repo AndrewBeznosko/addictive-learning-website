@@ -1,0 +1,31 @@
+html,
+body {
+    background: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    // background-image: url('../assets/img/logo.svg');
+}
+
+@media (min-width: 1320px) {
+    .container {
+        max-width: 1315px;
+    }
+}
+
+.position-absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec-title {
+    font-family: 'DIN Condensed';
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}

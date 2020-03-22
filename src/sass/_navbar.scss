@@ -1,0 +1,17 @@
+.top-navbar {
+    .nav-item {
+        margin-left: auto;
+    }
+}
+
+.nav-link {
+    font-size: 22px;
+    line-height: 135%;
+    color: #000000;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        color: #000000;
+    }
+}

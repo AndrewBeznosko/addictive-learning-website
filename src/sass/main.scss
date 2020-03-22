@@ -2,8 +2,6 @@
 
 @import "fonts";
 @import "variables";
-
-body {
-  background: #fff;
-  // background-image: url('../assets/img/logo.svg');
-}
+@import "common";
+@import "navbar";
+@import "sec-banner";
