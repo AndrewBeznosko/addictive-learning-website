@@ -52,9 +52,7 @@ module.exports = (env, options) => ({
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "img/",
-              // publicPath: '../',
-              // useRelativePaths: true
+              outputPath: "img/"
             }
           }
         ]
@@ -67,18 +65,6 @@ module.exports = (env, options) => ({
             options: {
               name: "[name].[ext]",
               outputPath: "fonts/"
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(js)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "js/"
             }
           }
         ]
