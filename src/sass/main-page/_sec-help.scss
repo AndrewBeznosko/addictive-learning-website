@@ -1,0 +1,24 @@
+.sec-help {
+    padding: 90px 0 99px;
+
+    .sec-title {
+        max-width: 538px;
+        font-size: 75px;
+        line-height: 110%;
+        margin-bottom: 30px;
+    }
+
+    .block-title {
+        font-size: 28px;
+        line-height: 110%;
+        margin-bottom: 30px;
+    }
+
+    &--img {
+        margin-bottom: 30px;
+    }
+
+    &--paragraph {
+        margin: 0;
+    }
+}
