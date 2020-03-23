@@ -1,5 +1,5 @@
 .article-heading {
-	margin: 140px 0 100px 0;
+	margin: 140px 0 20px 0;
 	.article-title {
 		line-height: 1;
 	}
@@ -8,6 +8,10 @@
 .article--info {
 	margin-top: 115px;
 	color: #000;
+
+	&__item {
+		margin-bottom: 100px;
+	}
 
 	&__title {
 		font-style: normal;
@@ -58,6 +62,10 @@
 		letter-spacing: 0.02em;
 	}
 
+	&__row {
+		flex-wrap: wrap-reverse;
+	}
+
 	&__title {
 		display: block;
 		font-family: 'DIN Condensed';
@@ -82,6 +90,7 @@
 
 .write-us-block {
 	&.sticky-top {
+		position: inherit;
 		@media (min-width: 1024px) {
 			position: sticky;
 			top: 30px;
@@ -108,4 +117,107 @@
 		color: #000;
 		max-width: 346px;
 	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.article--info{
+		&__item {
+			margin-bottom: 65px;
+		}
+
+		&__title {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-size: 20px;
+		}
+	}
+
+	.article--image img {
+		height: calc(100vw/2.23);
+	}
+	.article--body {
+		&-wrapper {
+			margin-top: 100px;
+		}
+		&__title {
+			font-size: 60px;
+		}
+
+		&__subtitle {
+			font-size: 40px;
+		}
+
+		&__text {
+			font-size: 20px;
+		}
+
+		li {
+			padding-left: 0;
+		}
+	}
+	.write-us-block {
+		margin-bottom: 50px;
+
+		&__title {
+			font-size: 24px;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
+	}
+
+}
+
+@media (max-width: $screen-xxs-max) {
+
+	.article-heading {
+		margin: 40px 0;
+	}
+	.article--info{
+		margin-top: 40px;
+		&__item {
+			margin-bottom: 20px;
+		}
+
+		&__title {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			font-size: 10px;
+		}
+	}
+
+	.article--body {
+		&-wrapper {
+			margin-top: 50px;
+		}
+		&__title {
+			font-size: 34px;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+		}
+
+		&__text {
+			font-size: 12px;
+		}
+	}
+	.write-us-block {
+
+		&__title {
+			font-size: 14px;
+		}
+
+		&__text {
+			font-size: 12px;
+		}
+	}
+
 }
