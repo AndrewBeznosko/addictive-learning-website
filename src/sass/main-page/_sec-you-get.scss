@@ -1,0 +1,25 @@
+.sec-you-get {
+    padding: 90px 0;
+
+    .sec-title {
+        font-size: 75px;
+        line-height: 110%;
+    }
+
+    &--text-block {
+        &:not(:first-of-type) {
+            margin-top: 70px;
+        }
+
+        .block-title {
+            font-size: 28px;
+            line-height: 110%;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 18px; 
+            line-height: 150%;
+        }
+    }
+}

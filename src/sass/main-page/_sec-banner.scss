@@ -1,0 +1,27 @@
+.sec-banner {
+    padding-bottom: 90px;
+    
+    .sec-title {
+        font-size: 90px;
+        line-height: 135%;
+    }
+
+    &--paragraph {
+        letter-spacing: 0.06em;
+        max-width: 538px;
+    }
+
+    &--links {
+        font-family: 'DIN Condensed';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 135%;
+        letter-spacing: 0.15em;
+        color: $theme-color;
+
+        &:hover {
+            color: inherit;
+        }
+    }
+}

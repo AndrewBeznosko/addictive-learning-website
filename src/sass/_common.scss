@@ -21,15 +21,38 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.sec-title {
+.sec-title,
+.block-title {
     font-family: 'DIN Condensed';
     font-style: normal;
     font-weight: bold;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #000000;
+}
+
+.font-size-60 {
+    font-size: 60px;
+    line-height: 130%;
+}
+
+.font-size-75 {
+    font-size: 75px;
+    line-height: 110%;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
 }
 
 .theme-color {
     color: $theme-color;
+}
+
+.theme-bg-color {
+    background-color: $theme-color;
 }

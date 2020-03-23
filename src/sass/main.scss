@@ -4,5 +4,8 @@
 @import "variables";
 @import "common";
 @import "navbar";
-@import "sec-banner";
 @import "footer";
+// main-page
+@import "main-page/sec-banner";
+@import "main-page/sec-description"; 
+@import "main-page/sec-you-get"; 
