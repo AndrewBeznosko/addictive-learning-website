@@ -21,6 +21,36 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.btn {
+    border-radius: 0;
+    font-family: 'DIN Condensed';
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 135%;
+    text-transform: uppercase;
+    padding: 19px 50px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: $theme-color;
+    border-color: $theme-color;
+
+    &:hover,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        color: #fff;
+        background-color: desaturate($theme-color, 10%);
+        border-color: desaturate($theme-color, 10%); 
+    }
+
+    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled).active:focus {
+        box-shadow: 0 0 0 0.2rem rgba(desaturate($theme-color, 10%), 0.5); 
+    }
+}
+
 .sec-title,
 .block-title {
     font-family: 'DIN Condensed';
@@ -55,4 +85,12 @@ p {
 
 .theme-bg-color {
     background-color: $theme-color;
+}
+
+.bg-gradient-gray-yellow {
+    background: linear-gradient(to right, $gray 50%, $yellow 50%);
+}
+
+.bg-gradient-blue-gray {
+    background: linear-gradient(to right, $blue 50%, $gray 50%);
 }
