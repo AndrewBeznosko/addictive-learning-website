@@ -6,4 +6,24 @@
         font-size: 60px;
         line-height: 130%;
     }
+
+    @media(max-width: $large-devices) {
+        .sec-title {
+            font-size: 50px;
+        }
+    }
+
+    @media(max-width: $large-devices) {
+        padding: 50px 0;
+
+        .sec-title {
+            font-size: 40px;
+        }
+    }
+
+    @media(max-width: $small-devices) {
+        .sec-title {
+            font-size: 36px;
+        }
+    }
 }

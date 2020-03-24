@@ -72,13 +72,14 @@
 		color: #666666;
 	}
 }
-//1024px
-@media (max-width: $screen-sm-max) {
+
+@media(max-width: $large-devices) {
 	.footer--contacts.sec-title {
 		font-size: 44px;
 		line-height: 120%;
 	}
 }
+
 //768px
 @media (max-width: $screen-sm-min) {
 	.footer--socials {

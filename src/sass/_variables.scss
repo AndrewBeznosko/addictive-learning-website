@@ -22,6 +22,23 @@ $screen-lg-max: 1440px;
 $screen-xlg-min: 1441px;
 $screen-xlg-max: 2560px;
 
+// ========================================================
+// bootstrap media 
+// ========================================================
+
+// Extra small devices (portrait phones, less than 576px)
+$extra-small: 575.98px;
+// Small devices (landscape phones, less than 768px)
+$small-devices: 767.98px;
+// Medium devices (tablets, less than 992px)
+$medium-devices: 991.98px;
+// Large devices (desktops, less than 1200px)
+$large-devices: 1199.98px;
+
+// ========================================================
+// fonts
+// ========================================================
+
 $font-family-playfair: 'Playfair Display', serif;
 
 $font-weight-thin:          100;
@@ -33,6 +50,10 @@ $font-weight-semibold:      600;
 $font-weight-bold:          700;
 $font-weight-exbold:        800;
 $font-weight-black:         900;
+
+// ========================================================
+// colors
+// ========================================================
 
 $theme-color: #21C6A6; //green
 $gray: #F9F9F9; 
