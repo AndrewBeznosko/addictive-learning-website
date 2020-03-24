@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
@@ -113,11 +113,8 @@ module.exports = (env, options) => ({
   ],
   optimization: {
     minimizer: [
-        new UglifyJsPlugin({
+        new TerserPlugin({
             cache: true,
-            parallel: true,
-            sourceMap: false,
-            extractComments: false
         }),
         new CompressionPlugin({
             test: /\.js$|\.css(\?.*)?$/i
