@@ -91,7 +91,19 @@ body {
 .font-size-75 {
     font-size: 75px;
     line-height: 110%;
+    @media(max-width: 1319px) {
+        font-size: 65px;
+    }
+
+    @media(max-width: $large-devices) {
+        font-size: 60px;
+    }
+
+    @media(max-width: $small-devices) {
+        font-size: 39px;
+    }
 }
+
 
 p {
     font-family: 'Roboto';
@@ -122,12 +134,15 @@ p {
     background: linear-gradient(to right, $blue 50%, $gray 50%);
 }
 
+.bg-gray {
+    background-color: $gray;
+}
+
 .page--heading {
-    margin: 100px 0 200px;
-    &__title {
-        font-size: 75px;
-        line-height: 130%;
+    padding: 100px 0 200px 0 ;
+    .sec-title {
         max-width: 450px;
+        padding-right: 50px
     }
 
     p {
@@ -141,5 +156,21 @@ p {
         width: 354px;
         max-width: 100%;
     }
+
+    @media (max-width: $large-devices) {
+        padding: 50px 0 100px 0;
+        p {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: $extra-small) {
+        padding: 25px 0 50px 0;
+
+        .sec-title {
+            padding-right: 0;
+        }
+    }
+
 
 }
