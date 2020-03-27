@@ -1,6 +1,9 @@
 .sec-try-now {
     &--row {
         padding: 100px 0;
+        min-height: 758px;
+        display: flex;
+        align-items: center;
     }
 
     .sec-title {
@@ -123,6 +126,7 @@
         &--row {
             padding: 0 0 50px;
             background: none !important;
+            min-height: 0;
         }
 
         &--img-wrapp {
@@ -141,7 +145,7 @@
                 height: 100%;
                 width: 100vw;
                 display: block;
-                z-index: -1; 
+                z-index: -1;
             }
 
             &.first {

@@ -1,0 +1,82 @@
+.how_it_works-page {
+    .page--heading {
+        .sec-title {
+            line-height: 130%;
+        }
+    }
+
+    .sec-free-trial {
+        .sec-title {
+            font-size: 104px;
+            line-height: 160%;
+
+            @media(max-width: 1319px) {
+                font-size: 79px;
+            }
+            @media(max-width: 991px) {
+                font-size: 50px;
+            }
+            @media(max-width: 767px) {
+                font-size: 47px;
+            }
+        }
+    }
+
+    .sec-try-now {
+        @media(max-width: 991px) {
+            background-color: $gray;
+    
+            // &--text-block {
+            //     max-width: 100%;
+            // }
+    
+            &--row {
+                padding: 0 0 50px;
+                background: none !important;
+                min-height: 0;
+
+                &:nth-of-type(1) .sec-try-now--img-wrapp {
+                    &::before {
+                        background-color: $yellow;
+                    }
+                }
+                &:nth-of-type(2) .sec-try-now--img-wrapp {
+                    &::before {
+                        background-color: $green;
+                    }
+                }
+                &:nth-of-type(3) .sec-try-now--img-wrapp {
+                    &::before {
+                        background-color: $purple;
+                    }
+                }
+                &:nth-of-type(4) .sec-try-now--img-wrapp {
+                    &::before {
+                        background-color: $blue;
+                    }
+                }
+            }
+    
+            &--img-wrapp {
+                padding: 50px 0;
+                position: relative;
+                top: initial;
+                left: initial;
+                z-index: 2;
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 100%;
+                    width: 100vw;
+                    display: block;
+                    z-index: -1;
+                }
+
+            }
+        }
+    }
+}

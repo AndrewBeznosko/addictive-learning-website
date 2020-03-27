@@ -46,12 +46,12 @@ body {
     &:not(:disabled):not(.disabled).active {
         color: #fff;
         background-color: desaturate($theme-color, 10%);
-        border-color: desaturate($theme-color, 10%); 
+        border-color: desaturate($theme-color, 10%);
     }
 
-    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled):active:focus,
     &:not(:disabled):not(.disabled).active:focus {
-        box-shadow: 0 0 0 0.2rem rgba(desaturate($theme-color, 10%), 0.5); 
+        box-shadow: 0 0 0 0.2rem rgba(desaturate($theme-color, 10%), 0.5);
     }
 }
 
@@ -65,10 +65,10 @@ body {
     &:not(:disabled):not(.disabled).active {
         color: #fff;
         background-color: desaturate(#000, 10%);
-        border-color: desaturate(#000, 10%); 
+        border-color: desaturate(#000, 10%);
     }
 
-    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled):active:focus,
     &:not(:disabled):not(.disabled).active:focus {
         // box-shadow: 0 0 0 0.2rem rgba(desaturate(#000, 10%), 0.5); 
     }
@@ -91,6 +91,7 @@ body {
 .font-size-75 {
     font-size: 75px;
     line-height: 110%;
+
     @media(max-width: 1319px) {
         font-size: 65px;
     }
@@ -126,12 +127,24 @@ p {
     background-color: $theme-color;
 }
 
+.bg-gradient-blue-gray {
+    background: linear-gradient(to right, $blue 50%, $gray 50%);
+}
+
 .bg-gradient-gray-yellow {
     background: linear-gradient(to right, $gray 50%, $yellow 50%);
 }
 
-.bg-gradient-blue-gray {
-    background: linear-gradient(to right, $blue 50%, $gray 50%);
+.bg-gradient-gray-blue {
+    background: linear-gradient(to right, $gray 50%, $blue 50%);
+}
+
+.bg-gradient-gray-green {
+    background: linear-gradient(to right, $gray 50%, $green 50%);
+}
+
+.bg-gradient-gray-purple {
+    background: linear-gradient(to right, $gray 50%, $purple 50%);
 }
 
 .bg-gray {
@@ -139,7 +152,8 @@ p {
 }
 
 .page--heading {
-    padding: 100px 0 200px 0 ;
+    padding: 100px 0 200px 0;
+
     .sec-title {
         max-width: 450px;
         padding-right: 50px
@@ -159,6 +173,7 @@ p {
 
     @media (max-width: $large-devices) {
         padding: 50px 0 100px 0;
+
         p {
             font-size: 16px;
         }
