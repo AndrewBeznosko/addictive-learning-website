@@ -1,6 +1,7 @@
 import TypeIt from "typeit"
 
-new TypeIt('#typeit', {
+if (document.getElementById('typeit')) {
+    new TypeIt('#typeit', {
         speed: 100,
         loop: true,
     })
@@ -12,4 +13,5 @@ new TypeIt('#typeit', {
     .delete()
     .type("Users!")
     .pause(4000)
-    .go();
+    .go();    
+}
