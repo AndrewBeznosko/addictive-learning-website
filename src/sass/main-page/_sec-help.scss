@@ -8,17 +8,17 @@
         margin-bottom: 30px;
     }
 
-    .block-title {
+    &--item__title {
         font-size: 28px;
         line-height: 110%;
         margin-bottom: 30px;
     }
 
-    &--img {
+    &--item__img {
         margin-bottom: 30px;
     }
 
-    &--paragraph {
+    &--item__paragraph {
         margin: 0;
     }
 
@@ -35,22 +35,22 @@
             font-size: 40px;
         }
 
-        &--img {
+        &--item__img {
             margin-bottom: 20px;
             margin-right: 30px;
             max-width: 60px;
         }
 
-        .block-title {
+         &--item__title {
             font-size: 25px;
             margin-bottom: 15px;
         }
 
-        &--paragraph {
+        &--item__paragraph {
             margin-bottom: 30px;
         }
 
-        &--text-block {
+        &--item {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
