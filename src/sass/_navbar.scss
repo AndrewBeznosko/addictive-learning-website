@@ -22,6 +22,49 @@
     }
 }
 
+.lang-selector {
+
+    .dropdown-item,
+    .btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: transparent;
+        text-transform: initial;
+        font-size: 22px;
+        line-height: 135%;
+        color: #000000;
+        font-family: 'Roboto';
+        font-weight: normal;
+
+        &:focus,
+        &.focus {
+            box-shadow: none;
+        }
+    }
+
+    .dropdown-item {
+        padding: 5px 0.5rem;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #21C6A6;
+        background-color: transparent;
+    }
+
+    .dropdown-menu {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        // border-top: 1px solid #000;
+    }
+}
+
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle,
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+}
+
 @media(max-width: 991px) {
     .navbar-collapse {
         position: fixed;

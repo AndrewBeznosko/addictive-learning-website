@@ -186,6 +186,38 @@ p {
             padding-right: 0;
         }
     }
+}
 
+.pagination {
+    .page-link {
+        padding: .5rem 1.2rem;
+        line-height: 1.25;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        font-family: 'DIN Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+    }
 
+    .page-item.active .page-link {
+        z-index: 1;
+        color: #fff;
+        background-color: #21c6a6;
+        border-color: #21c6a6;
+    }
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+
+        .page-item {
+            margin-bottom: 5px;
+        }
+
+        .page-link {
+            padding: .5rem 1rem;
+            font-size: 16px;
+        }
+    }
 }

@@ -1,26 +1,33 @@
 import TypeIt from "typeit"
 import 'slick-carousel/slick/slick';
+import 'bootstrap-select/dist/js/bootstrap-select.min.js';
 
+// ====================================================
+// Typed text
+// ====================================================
 if (document.getElementById('typeit')) {
     new TypeIt('#typeit', {
-        speed: 100,
-        loop: true,
-    })
-    .type("Followers!")
-    .pause(1000)
-    .delete()
-    .type("Friends!")
-    .pause(1000)
-    .delete()
-    .type("Users!")
-    .pause(4000)
-    .go();    
+            speed: 100,
+            loop: true,
+        })
+        .type("Followers!")
+        .pause(1000)
+        .delete()
+        .type("Friends!")
+        .pause(1000)
+        .delete()
+        .type("Users!")
+        .pause(4000)
+        .go();
 }
 
+// ====================================================
+// Carusel
+// ====================================================
 const slider = $('#main-slider');
 
 if (slider) {
-    
+
     slider.slick({
         arrows: false,
         speed: 350,
@@ -29,37 +36,46 @@ if (slider) {
     });
 
     let wheeling = false,
-        counter1 = 0, 
+        counter1 = 0,
         counter2;
 
-    slider.on('wheel', (function(e) {
-      e.preventDefault();
-      counter1 += 1;
-      
-      if (wheeling == false) {
-        wheeling = true;
-        wheelAct();
-        if (e.originalEvent.deltaY < 0) {
-           $(this).slick('slickPrev');
-        } else {
-            $(this).slick('slickNext');
+    slider.on('wheel', (function (e) {
+        e.preventDefault();
+        counter1 += 1;
+
+        if (wheeling == false) {
+            wheeling = true;
+            wheelAct();
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickPrev');
+            } else {
+                $(this).slick('slickNext');
+            }
         }
-      }  
     }));
 
-    function wheelAct(){
+    function wheelAct() {
         counter2 = counter1;
-        setTimeout(function(){
+        setTimeout(function () {
             if (counter2 == counter1) {
                 wheelEnd();
             } else {
                 wheelAct();
             }
-        },30);
+        }, 30);
     }
-    function wheelEnd(){
+
+    function wheelEnd() {
         wheeling = false;
         counter1 = 0;
         counter2 = false;
     }
 }
+
+// ====================================================
+// Carusel
+// ====================================================
+const selectpicker = $('.selectpicker');
+if (selectpicker) {
+    selectpicker.selectpicker();
+} 
