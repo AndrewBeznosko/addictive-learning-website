@@ -32,50 +32,17 @@ if (slider) {
         arrows: false,
         speed: 350,
         variableWidth: true,
-        touchThreshold: 20
+        touchThreshold: 20,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
-
-    let wheeling = false,
-        counter1 = 0,
-        counter2;
-
-    slider.on('wheel', (function (e) {
-        e.preventDefault();
-        counter1 += 1;
-
-        if (wheeling == false) {
-            wheeling = true;
-            wheelAct();
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
-        }
-    }));
-
-    function wheelAct() {
-        counter2 = counter1;
-        setTimeout(function () {
-            if (counter2 == counter1) {
-                wheelEnd();
-            } else {
-                wheelAct();
-            }
-        }, 30);
-    }
-
-    function wheelEnd() {
-        wheeling = false;
-        counter1 = 0;
-        counter2 = false;
-    }
 }
 
 // ====================================================
-// Carusel
+// selectpicker
 // ====================================================
 const selectpicker = $('.selectpicker');
 if (selectpicker) {
     selectpicker.selectpicker();
-} 
+}

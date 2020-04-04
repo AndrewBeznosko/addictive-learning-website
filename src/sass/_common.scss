@@ -221,3 +221,49 @@ p {
         }
     }
 }
+
+.slick-dots {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 20px auto 0 0;
+    max-width: 1117px;
+
+    // width: 100%;
+    // position: absolute;
+    // bottom: 20px;
+    // padding: 0 20px;
+
+    li {
+        height: 4px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        + li {
+            margin-left: 10px;
+        }
+
+        button {
+            display: none;
+        }
+
+        &.slick-active {
+            background-color: $theme-color;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
