@@ -13,10 +13,10 @@ if (document.getElementById('typeit')) {
         .type("Followers!")
         .pause(1000)
         .delete()
-        .type("Friends!")
+        .type("Learners!")
         .pause(1000)
         .delete()
-        .type("Users!")
+        .type("Community!")
         .pause(4000)
         .go();
 }
