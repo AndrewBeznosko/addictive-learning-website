@@ -25,9 +25,9 @@ if (document.getElementById('typeit')) {
 // Carusel
 // ====================================================
 const slider = $('#main-slider');
+const howItWorksSlider = $('#how-it-works-slider');
 
 if (slider) {
-
     slider.slick({
         arrows: false,
         speed: 350,
@@ -36,6 +36,18 @@ if (slider) {
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
+    });
+}
+
+if (howItWorksSlider) {
+    howItWorksSlider.slick({
+        arrows: false,
+        speed: 350,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        cssEase: 'linear'
     });
 }
 

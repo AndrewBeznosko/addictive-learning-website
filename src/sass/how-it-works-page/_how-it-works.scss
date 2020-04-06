@@ -80,3 +80,17 @@
         }
     }
 }
+
+#how-it-works-slider {
+    max-width: 570px;
+    
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .slick-slide img {
+        max-width: 570px;
+        width: 100%;
+    }
+}
