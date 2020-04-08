@@ -73,6 +73,18 @@
             &.second {
                 padding-right: 50px;
             }
+
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+
+    @media (max-width: 1320px) {
+        &--img-wrapp {
+            img {
+                max-width: 450px;
+            }
         }
     }
 

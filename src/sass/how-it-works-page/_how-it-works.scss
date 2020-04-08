@@ -93,4 +93,20 @@
         max-width: 570px;
         width: 100%;
     }
+
+    @media (max-width: 1500px) {
+        max-width: 500px;
+
+        .slick-slide img {
+            max-width: 500px;
+        }
+    }
+
+    @media (max-width: 1320px) {
+        max-width: 450px;
+
+        .slick-slide img {
+            max-width: 450px;
+        }
+    }
 }
