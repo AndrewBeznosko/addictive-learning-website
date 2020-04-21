@@ -2,8 +2,9 @@
     padding-bottom: 90px;
     
     .sec-title {
-        font-size: 90px;
-        line-height: 135%;
+        font-size: 87px;
+        line-height: 140%;
+        letter-spacing: .1px;
     }
 
     &--paragraph {
@@ -47,7 +48,7 @@
 
     @media(max-width: $screen-xs-max) {
         .sec-title {
-            font-size: 48px;
+            font-size: 46px;
         }
     }
 }
